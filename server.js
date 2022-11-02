@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 
 // meter productosRandom en la base datos, en la colección productos
 const productosRandoms = generadorProductos();
