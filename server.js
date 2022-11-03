@@ -23,6 +23,10 @@ const checkAuthentication = require("./src/utils/checkAuthentication");
 const passport = require("./src/utils/passportMiddleware");
 
 app.use(express.json());
+if (process.env.NODE_ENV === "production") {
+	//set static folder
+	app.use(express.static("client/build"));
+}
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
@@ -53,6 +57,10 @@ app.engine(
 		partialsDir: __dirname + "/src/views/partials"
 	})
 );
+
+app.get("*", (req, res) => {
+	res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
 
 app.use(
 	session({
