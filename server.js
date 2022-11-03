@@ -6,7 +6,6 @@ const MongoStore = require("connect-mongo");
 const session = require("express-session");
 const cp = require("cookie-parser");
 const { fork } = require("child_process");
-const cluster = require("cluster");
 const numCPUs = require("os").cpus().length;
 
 const app = express();
@@ -40,10 +39,7 @@ const logger = require("./src/logs/loggers");
 const Carritos = new Carrito();
 let Productos = new Producto();
 
-const Logins = new Login();
 const Chats = new Chat();
-
-const User = new Login();
 
 app.set("view engine", "hbs");
 app.set("views", "./src/views/layouts");
@@ -67,7 +63,7 @@ app.use(
 				useUnifiedTopology: true
 			}
 		}),
-		secret: process.env.MONGODB_SECRETO || "secreto",
+		secret: process.env.MONGODB_SECRETO,
 		resave: false,
 		rolling: true,
 		saveUninitialized: false,
