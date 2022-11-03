@@ -24,9 +24,9 @@ const passport = require("./src/utils/passportMiddleware");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("public"));
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 // meter productosRandom en la base datos, en la colección productos
 const productosRandoms = generadorProductos();
@@ -53,10 +53,6 @@ app.engine(
 		partialsDir: __dirname + "/src/views/partials"
 	})
 );
-
-app.get("*", (req, res) => {
-	res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-});
 
 app.use(
 	session({
