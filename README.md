@@ -189,6 +189,30 @@ pm2 start server.js --name="server fork" --watch -- -p 8080
 pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 ```
 
+## Desafío clase 34: Desplegar nuestro proyecto en la nube
+
+- Subido el proyecto a Heroku.
+- También corre en local.
+- Se puede ver en https://proyecto-backend-1.herokuapp.com
+
+## Desafío clase 38: Arquitectura de capas
+
+- Separado en capas, el orden de mi proyecto es:
+
+  - Capa de rutas
+  - Capa de controladores
+  - Capa de servicios
+  - Capa de persistencia
+
+- Los cuales pueden ser visitados de la siguiente manera:
+- /src
+  - /contenedores
+  - /controllers
+  - /daos
+  - /routes
+  - /utils Acá tengo los middlewares y todas las funciones que llamo desde otros lados.
+  - /views Acá están mis views en Handlebars.
+
 #### Configuración NGINX
 
 ```
