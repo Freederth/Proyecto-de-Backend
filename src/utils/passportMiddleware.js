@@ -67,7 +67,11 @@ passport.use(
 				} else {
 					const newUser = {
 						username: username,
-						password: createHash(password)
+						password: createHash(password),
+						fullName: req.body.fullName,
+						age: req.body.age,
+						phone: req.body.phone,
+						address: req.body.address
 					};
 					await User.save(newUser);
 

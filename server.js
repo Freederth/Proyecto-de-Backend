@@ -85,13 +85,21 @@ app.get("/", checkAuthentication, async (req, res) => {
 	res.render("index", { productos });
 });
 
+app.get("/profile", checkAuthentication, async (req, res) => {
+	const UserContainer = new Login();
+	// get user by session id
+	const user = await UserContainer.getById(req.session.passport.user);
+	// console.log("user", user);
+	res.render("profile", { user });
+});
+
 // -------- LOGIN-INICIO ------------
 // render login
 app.get("/login", (req, res) => {
 	if (req.isAuthenticated()) {
 		let user = req.user;
 		console.log("usuario logueado");
-		res.render("index");
+		res.render("profile", { user });
 	} else {
 		console.log("user no logueado");
 		res.render("login");
@@ -101,7 +109,7 @@ app.get("/login", (req, res) => {
 app.post(
 	"/login",
 	passport.authenticate("login", {
-		successRedirect: "/",
+		successRedirect: "/profile",
 		failureRedirect: "faillogin"
 	}),
 
@@ -121,7 +129,7 @@ app.post(
 	"/register",
 	passport.authenticate("register", {
 		failureRedirect: "failregister",
-		successRedirect: "login"
+		successRedirect: "profile"
 	}),
 	(req, res) => {
 		res.render("/login", { username: req.body.username });
