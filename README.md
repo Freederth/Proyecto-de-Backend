@@ -213,6 +213,15 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
   - /utils Acá tengo los middlewares y todas las funciones que llamo desde otros lados.
   - /views Acá están mis views en Handlebars.
 
+## Desafío clase 40: Arquictura del servidor: Persistencia
+
+- Agregar persistencia incorporando concepto de DAO y DTO.
+- /src
+  - /daos
+    - index.js tiene el selector de DAOS, que trae: MongoDB para todo menos el Chat, que va en Firebase.
+- No quise ponerle que se elija, porque ya en mongoCloud tengo armadas las bases de dato.
+- Si llamo 2 veces a la misma ruta, no se repite el producto, porque ya está en la base de datos.
+
 #### Configuración NGINX
 
 ```
