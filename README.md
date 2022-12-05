@@ -193,7 +193,7 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 
 - Subido el proyecto a Heroku.
 - También corre en local.
-- Se puede ver en https://proyecto-backend-1.herokuapp.com
+- Ya no funciona.
 
 ## Desafío clase 38: Arquitectura de capas
 
@@ -235,7 +235,8 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 #### Deployment
 
 Como heroku se murió, ahora el deployment es en Railway.app
-[![Deploy](https://proyecto-de-backend-production.up.railway.app)](https://proyecto-de-backend-production.up.railway.app)
+
+[Deploy](https://proyecto-de-backend-production.up.railway.app)
 
 #### Configuración NGINX
 
