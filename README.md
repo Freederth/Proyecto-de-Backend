@@ -232,6 +232,11 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 - Realizar pruebas a través de código test apropiado, utilizando mocha, chai y supertest, para probar todos los métodos HTTP de la API Restful.
 - Escribir una suite de test para verificar si las respuestas de lectura, incorporación, actualización y eliminación de productos son las esperadas. Generar reporte con resultados obtenidos de la salida del test
 
+#### Deployment
+
+Como heroku se murió, ahora el deployment es en Railway.app
+[![Deploy](https://proyecto-de-backend-production.up.railway.app)](https://proyecto-de-backend-production.up.railway.app)
+
 #### Configuración NGINX
 
 ```
