@@ -222,6 +222,16 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 - No quise ponerle que se elija, porque ya en mongoCloud tengo armadas las bases de dato.
 - Si llamo 2 veces a la misma ruta, no se repite el producto, porque ya está en la base de datos.
 
+## Desafío clase 42: Testeamos nuestra API Rest
+
+- Revisar estructura de proyecto, refactorizar si es necesario. Llegar a esquema servidor API RESTFUL en capas.
+- Dejar servidor bien estructurado con ruteo, controlador, negocio, validaciones, persistencia y configuraciones.
+- Innecesario realiar cliente.
+- Cliente HTTP que utilice Axios para enviar peticiones y realizar test de funcionalidad, verificando correcta lectura de productos disponibles, creación de productos, actualización de productos y eliminación de productos.
+- Realizar el cliente en módulo independiente, desde código aparte, generar peticiones correspondientes.
+- Realizar pruebas a través de código test apropiado, utilizando mocha, chai y supertest, para probar todos los métodos HTTP de la API Restful.
+- Escribir una suite de test para verificar si las respuestas de lectura, incorporación, actualización y eliminación de productos son las esperadas. Generar reporte con resultados obtenidos de la salida del test
+
 #### Configuración NGINX
 
 ```
