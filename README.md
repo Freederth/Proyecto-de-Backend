@@ -232,7 +232,13 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 - Realizar pruebas a través de código test apropiado, utilizando mocha, chai y supertest, para probar todos los métodos HTTP de la API Restful.
 - Escribir una suite de test para verificar si las respuestas de lectura, incorporación, actualización y eliminación de productos son las esperadas. Generar reporte con resultados obtenidos de la salida del test
 
-#### [Deployment](https://proyecto-de-backend-production.up.railway.app)
+## Desafío clase 44: Reformar para usar GraphQL
+
+- En base al desafío de la clase 42, reformar capa de ruteo y controlador para que los requests puedan ser realizados a través de GraphQL.
+- Si hubiera frontend, debería ser reformado para que utilice GraphQL.
+- Utulizar GraphQL para realizar prueba de funcionalidad de queries y mutations.
+
+#### [Deploy](https://proyecto-de-backend-production.up.railway.app)
 
 #### Configuración NGINX
 
