@@ -235,7 +235,8 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 
 - En base al desafío de la clase 42, reformar capa de ruteo y controlador para que los requests puedan ser realizados a través de GraphQL.
 - Si hubiera frontend, debería ser reformado para que utilice GraphQL.
-- Utulizar GraphQL para realizar prueba de funcionalidad de queries y mutations.
+- Utilizar GraphQL para realizar prueba de funcionalidad de queries y mutations.
+- En /productGraphql encontrarás la ruta donde está configurada GraphQL.
 
 #### [Deploy](https://proyecto-de-backend-production.up.railway.app)
 
