@@ -16,20 +16,20 @@ const io = new IoServer(httpServer);
 
 // --- middleware ----------------
 app.use(cp());
-const passport = require("./src/utils/passportMiddleware");
+const passport = require("./utils/passportMiddleware");
 
 const { graphqlHTTP } = require("express-graphql"); // GraphQL
-const routeProductGraphQL = require("./src/routes/router.products.gql"); // GraphQL
+const routeProductGraphQL = require("./routes/router.products.gql"); // GraphQL
 
 // --- Routers ----
-const { routerHome } = require("./src/routes/router.home");
-const { routerProductos } = require("./src/routes/router.products");
-const { routerCarrito } = require("./src/routes/router.cart");
-const { routerLogin } = require("./src/routes/router.login");
-const { routerProfile } = require("./src/routes/router.profile");
-const { routerRegister } = require("./src/routes/router.register");
-const { routerInfo } = require("./src/routes/router.info");
-const { routerRandom } = require("./src/routes/router.random");
+const { routerHome } = require("./routes/router.home");
+const { routerProductos } = require("./routes/router.products");
+const { routerCarrito } = require("./routes/router.cart");
+const { routerLogin } = require("./routes/router.login");
+const { routerProfile } = require("./routes/router.profile");
+const { routerRegister } = require("./routes/router.register");
+const { routerInfo } = require("./routes/router.info");
+const { routerRandom } = require("./routes/router.random");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -37,10 +37,10 @@ app.use(express.static("public"));
 
 const PORT = process.env.PORT || 4000;
 
-const { Chat } = require("./src/daos/index.js");
+const { Chat } = require("./daos/index.js");
 
 // LOG4JS
-const logger = require("./src/logs/loggers");
+const logger = require("./logs/loggers");
 
 const Chats = new Chat();
 
@@ -53,7 +53,7 @@ app.engine(
 		extname: ".hbs",
 		defaultLayout: "",
 		layoutsDir: "",
-		partialsDir: __dirname + "/src/views/partials"
+		partialsDir: __dirname + "/views/partials"
 	})
 );
 
