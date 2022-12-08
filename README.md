@@ -219,7 +219,6 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 - /src
   - /daos
     - index.js tiene el selector de DAOS, que trae: MongoDB para todo menos el Chat, que va en Firebase.
-- No quise ponerle que se elija, porque ya en mongoCloud tengo armadas las bases de dato.
 - Si llamo 2 veces a la misma ruta, no se repite el producto, porque ya está en la base de datos.
 
 ## Desafío clase 42: Testeamos nuestra API Rest
