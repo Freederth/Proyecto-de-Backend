@@ -18,9 +18,6 @@ const io = new IoServer(httpServer);
 app.use(cp());
 const passport = require("./utils/passportMiddleware");
 
-const { graphqlHTTP } = require("express-graphql"); // GraphQL
-const routeProductGraphQL = require("./routes/router.products.gql"); // GraphQL
-
 // --- Routers ----
 const { routerHome } = require("./routes/router.home");
 const { routerProductos } = require("./routes/router.products");
@@ -99,8 +96,6 @@ app.use("/", routerRegister);
 app.use("/", routerInfo);
 // ----- RANDOM PAGE ----
 app.use("/api", routerRandom);
-// ----- GRAPHQL ----
-app.use("/productGraphql", graphqlHTTP(routeProductGraphQL));
 
 /* ------------ CHAT ------------ */
 io.on("connection", async socket => {

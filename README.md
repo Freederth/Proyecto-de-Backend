@@ -238,6 +238,10 @@ pm2 start server.js --name="Server Cluster" -i max --watch -- 8080
 - Utilizar GraphQL para realizar prueba de funcionalidad de queries y mutations.
 - En /productGraphql encontrarás la ruta donde está configurada GraphQL.
 
+## Desafío clase 46: Reformar para usar otro framework
+
+- Reformar proyecto para utilizar otro framework, en este caso, utilicé Koa.
+
 #### [Deploy](https://proyecto-de-backend-production.up.railway.app)
 
 #### Configuración NGINX
