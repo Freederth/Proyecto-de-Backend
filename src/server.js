@@ -83,9 +83,9 @@ app.use(passport.session());
 // HOME
 app.use("/", routerHome);
 // PRODUCTOS
-app.use("/api", routerProductos);
+app.use("/", routerProductos);
 // CARRITO
-app.use("/api", routerCarrito);
+app.use("/", routerCarrito);
 // LOGIN
 app.use("/", routerLogin);
 // PROFILE
