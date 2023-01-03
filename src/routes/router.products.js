@@ -22,8 +22,10 @@ routerProductos.get("/productos", async (req, res) => {
 	const producto = await productosRandoms;
 	// y también quiero que lea de la base de dato si hay algo
 	const productosDB = await Productos.getAll();
+	console.log(productosDB);
 	const productosConRandoms = [...producto, ...productosDB];
 	res.render("productos", {
+		titulo: "Productos y random",
 		list: productosConRandoms,
 		listExist: true,
 		producto: true

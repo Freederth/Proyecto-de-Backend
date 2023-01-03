@@ -27,6 +27,7 @@ const { routerProfile } = require("./routes/router.profile");
 const { routerRegister } = require("./routes/router.register");
 const { routerInfo } = require("./routes/router.info");
 const { routerRandom } = require("./routes/router.random");
+const { routerChat } = require("./routes/router.chat");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -38,8 +39,6 @@ const { Chat } = require("./daos/index.js");
 
 // LOG4JS
 const logger = require("./logs/loggers");
-
-const Chats = new Chat();
 
 app.set("view engine", "hbs");
 app.set("views", "./src/views/layouts");
@@ -96,36 +95,39 @@ app.use("/", routerRegister);
 app.use("/", routerInfo);
 // ----- RANDOM PAGE ----
 app.use("/api", routerRandom);
+// ----- CHAT ----
+app.use("/", routerChat);
 
 /* ------------ CHAT ------------ */
 io.on("connection", async socket => {
+	const Chats = new Chat();
 	let mensajesChat = await Chats.getAll();
 	console.log("Se contectó un usuario");
 
-	const text = {
-		text: "ok",
+	const mensaje = {
+		mensaje: "ok",
 		mensajesChat
 	};
 
-	socket.emit("mensaje-servidor", text);
+	socket.emit("mensaje-servidor", mensaje);
 
 	socket.on("mensaje-nuevo", async (msg, cb) => {
 		mensajesChat.push(msg);
-		const text = {
-			text: "mensaje nuevo",
+		const mensaje = {
+			mensaje: "mensaje nuevo",
 			mensajesChat
 		};
 
-		io.sockets.emit("mensaje-servidor", text);
-		await Chats.save({
-			mail,
-			msg,
-			fecha
+		const id = new Date().getTime();
+		io.sockets.emit("mensaje-servidor", mensaje);
+		cb(id);
+		await comentarios.save({
+			id,
+			mail: msg.mail,
+			msg: msg.mensaje
 		});
-		return (mensajesChat = await Chats.getAll());
 	});
 });
-// ---------------------------- FIN CARRITO -------------
 
 // logger
 app.use((req, res, next) => {
