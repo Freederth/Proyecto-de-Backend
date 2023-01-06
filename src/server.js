@@ -26,7 +26,6 @@ const { routerLogin } = require("./routes/router.login");
 const { routerProfile } = require("./routes/router.profile");
 const { routerRegister } = require("./routes/router.register");
 const { routerInfo } = require("./routes/router.info");
-const { routerRandom } = require("./routes/router.random");
 const { routerChat } = require("./routes/router.chat");
 
 app.use(express.json());
@@ -93,8 +92,6 @@ app.use("/", routerProfile);
 app.use("/", routerRegister);
 // ----- INFO PAGE ----
 app.use("/", routerInfo);
-// ----- RANDOM PAGE ----
-app.use("/api", routerRandom);
 // ----- CHAT ----
 app.use("/", routerChat);
 
@@ -102,7 +99,7 @@ app.use("/", routerChat);
 io.on("connection", async socket => {
 	const Chats = new Chat();
 	let mensajesChat = await Chats.getAll();
-	console.log("Se contectó un usuario");
+	logger.info("Se contectó un usuario");
 
 	const mensaje = {
 		mensaje: "ok",
@@ -112,7 +109,10 @@ io.on("connection", async socket => {
 	socket.emit("mensaje-servidor", mensaje);
 
 	socket.on("mensaje-nuevo", async (msg, cb) => {
+		console.log(mensajesChat);
+
 		mensajesChat.push(msg);
+		console.log(mensajesChat);
 		const mensaje = {
 			mensaje: "mensaje nuevo",
 			mensajesChat
@@ -121,21 +121,21 @@ io.on("connection", async socket => {
 		const id = new Date().getTime();
 		io.sockets.emit("mensaje-servidor", mensaje);
 		cb(id);
-		await comentarios.save({
+		await Chats.save({
 			id,
 			mail: msg.mail,
-			msg: msg.mensaje
+			msg: msg.msg
 		});
 	});
 });
 
 // logger
-app.use((req, res, next) => {
-	logger.warn("NONE EXISTING URL");
+app.get("*", (req, res, next) => {
+	logger.error("ERROR 404 - NO ENCONTRADO");
 	res.sendStatus("404");
 });
 
 //--------- listener
 httpServer.listen(PORT, () => {
-	console.log(`Server listening on ${PORT}`);
+	logger.info(`Server listening on ${PORT}`);
 });

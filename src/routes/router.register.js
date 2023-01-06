@@ -14,20 +14,19 @@ const nodemailer = require("nodemailer");
 const fs = require("fs");
 const imagenesPath = require("../img/img.paths.js");
 
-const twilio = require("twilio");
+// const { ACCOUNT_SID, AUTH_TOKEN, GMAIL, TWILIO_NUMBER } = process.env;
+const { GMAIL } = process.env;
 
-const { ACCOUNT_SID, AUTH_TOKEN, GMAIL, TWILIO_NUMBER } = process.env;
-
-const client = twilio(ACCOUNT_SID, AUTH_TOKEN);
+// const client = twilio(ACCOUNT_SID, AUTH_TOKEN);
 
 const multer = require("multer");
 const upload = multer();
 
 const passport = require("../utils/passportMiddleware");
 
-const transport = nodemailer.createTransport({
-	service: "gmail",
-	port: 587,
+const transporter = nodemailer.createTransport({
+	host: "smtp.gmail.com",
+	port: 465,
 	auth: {
 		user: "achurre@gmail.com",
 		pass: GMAIL
@@ -43,45 +42,37 @@ routerRegister.post(
 	upload.single("image"),
 	passport.authenticate("register", {
 		failureRedirect: "failregister",
-		successRedirect: "profile"
+		successRedirect: "/"
 	}),
-	(req, res) => {
+	async (req, res) => {
 		fs.writeFileSync(
 			path.join(imagenesPath, req.body.username + ".jpg"),
 			req.file.buffer
 		);
+		const mailOptions = {
+			from: "Achurrita",
+			to: "achurre@gmail.com",
+			subject: "Usuario nuevo registrado",
+			html: `<h1>¡${req.body.username} se ha unido al club!</h1>`
+		};
+		console.log("prueba");
 
-		try {
-			const message = client.messages.create({
-				body: "Te has registrado en la aplicacion de Achurrita",
-				from: TWILIO_NUMBER,
-				to: req.body.phone
-			});
-			console.log(message);
-		} catch (error) {
-			console.log(error);
-		}
+		await transporter.sendMail(mailOptions, function (error, info) {
+			if (error) {
+				logger.error(error);
+			} else {
+				logger.info("Email enviado" + info.response);
+				console.log("mail enviado");
+			}
 
-		transport
-			.sendMail({
-				from: "achurre@gmail.com",
-				to: "achurre@gmail.com",
-				html: `<h1>Se ha registrado un nuevo Usuario ${req.body.username}</h1>`,
-				subject: "Registro Usuario"
-			})
-			.then(result => {
-				console.log(result);
-			})
-			.catch(console.log);
-		logger.info("Usuario Registrado");
-
-		res.render("/login", { username: req.body.username });
+			res.render("/login", { username: req.body.username });
+		});
 	}
 );
 
 //error de registro
 routerRegister.get("/failregister", (req, res) => {
-	console.error("Error de registro");
+	logger.error("Error de registro");
 	// now redirect to failregister.hbs
 	res.render("failregister");
 });

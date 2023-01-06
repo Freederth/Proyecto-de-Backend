@@ -7,12 +7,12 @@ const logger = require("../logs/loggers");
 routerLogin.post(
 	"/login",
 	passport.authenticate("login", {
-		successRedirect: "/profile",
+		successRedirect: "/",
 		failureRedirect: "faillogin"
 	}),
 
 	(req, res) => {
-		logger.info("data Login");
+		logger.log("data Login");
 		res.render("/", { username: req.body.username });
 	}
 );
@@ -20,10 +20,9 @@ routerLogin.post(
 routerLogin.get("/login", (req, res) => {
 	if (req.isAuthenticated()) {
 		let user = req.user;
-		console.log("usuario logueado");
-		res.render("profile", { user });
+		res.render("/", { user });
 	} else {
-		console.log("user no logueado");
+		logger.error("Usuario no loggeado");
 		res.render("login");
 	}
 });

@@ -11,22 +11,16 @@ const checkAuthentication = require("../utils/checkAuthentication");
 const { Producto } = require("../daos/index.js");
 const Productos = new Producto();
 
-const { generadorProductos } = require("../utils/generadorProducto");
-const productosRandoms = generadorProductos();
-
 const productoSubido = storage.fields([
 	{ title: "title", thumbnail: "thumbnail", price: "price" }
 ]);
 
 routerProductos.get("/productos", async (req, res) => {
-	const producto = await productosRandoms;
 	// y también quiero que lea de la base de dato si hay algo
 	const productosDB = await Productos.getAll();
-	console.log(productosDB);
-	const productosConRandoms = [...producto, ...productosDB];
 	res.render("productos", {
-		titulo: "Productos y random",
-		list: productosConRandoms,
+		titulo: "Productos",
+		list: productosDB,
 		listExist: true,
 		producto: true
 	});

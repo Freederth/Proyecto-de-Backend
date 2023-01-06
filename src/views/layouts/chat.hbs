@@ -54,38 +54,34 @@
         {{footer}}
 
         <script>
-
             const server = io().connect();
 
             const render = mensajesChat => {
-                let chat = document.getElementById("chat");
+                let chat = document.querySelector("#chat");
                 let html = mensajesChat.map(mens => {
-                    return `<li><strong style="color:blue"> ${mens.mail} </strong>
-                            [<span style="color:brown">${mens.fecha}</span>]:
-                            <em style="color:green"> ${mens.msg} </em>
-                            </li>`;
-                }).sort((a, b) => {
-                    return a.fecha - b.fecha;
-                });;
-                // sort by fecha
+                    return `<li>
+        <strong style="color:blue"> ${mens.mail} </strong>
+		[<span style="color:brown">${mens.fecha}</span>]:
+        <em style="color:green"> ${mens.msg} </em>
+        </li>`;
+                });
                 chat.innerHTML = html.join("");
             };
 
             const addMessage = evt => {
-
-                const mail = document.querySelector("mail").value;
-                const msg = document.querySelector("msg").value;
+                const mail = document.querySelector("#mail").value;
+                let fecha = new Date().toLocaleTimeString();
+                const msg = document.querySelector("#msg").value;
 
                 const chatText = { mail, fecha, msg };
                 server.emit("mensaje-nuevo", chatText, id => {
-
-                    console.log(chatText);
                 });
 
                 return false;
             };
 
             server.on("mensaje-servidor", mensaje => {
+                // console.log("mensaje-servidor: ", mensaje);
                 render(mensaje.mensajesChat);
             });
 
