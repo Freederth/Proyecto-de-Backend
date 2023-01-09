@@ -1,3 +1,4 @@
+const dotenv = require("dotenv").config();
 const { createTransport } = require("nodemailer");
 const { logger } = require("../logs/loggers.js");
 const { GMAIL } = process.env;
@@ -11,91 +12,61 @@ const transporter = createTransport({
 	}
 });
 
-const sendemail = async () => {
+const mailer = async mailOptions => {
 	try {
-		const info = await transporter.sendMail({
-			from: "Achurrita",
-			to: "achurre@gmail.com",
-			subject: "Usuario nuevo registrado",
-			html: `
-        <h2>Hola estúpido</h2>
-        <p>¡Bienvenido al nuevo usuario!</p>
-      `
-		});
-
-		console.log(info);
-	} catch (error) {
-		console.log(error);
-	}
-};
-
-const sendNewSignupMail = async newUser => {
-	try {
-		const success = await transporter.sendMail({
-			from: "Achurrita",
-			to: "achurre@gmail.com",
-			subject: "Usuario nuevo registrado",
-			html: `
-        <p>Email: ${newUser.username}</p>
-        <p>Nombre: ${newUser.fullName}</p>
-        <p>Dirección: ${newUser.address}</p>
-        <p>Edad: ${newUser.age}</p>
-        <p>Teléfono: ${newUser.phone}</p>
-      `
-		});
-		logger.info(success);
+		const info = await transporter.sendMail(mailOptions);
+		logger.info(info);
 	} catch (error) {
 		logger.error(error);
 	}
 };
 
-const sendOrderMail = async newOrder => {
-	const template = newOrder.productos
-		.map(
-			product => `
-        <tr><td><img src="${product.thumbnail}" width="40px"></td>
-        <td>${product.id}</td>
-        <td>${product.title}</td>
-        <td>${product.quantity}</td>
-        <td>${product.price}</td></tr>
-      `
-		)
-		.join("");
-	try {
-		const success = await transporter.sendMail({
-			from: "Achurrita",
-			to: "achurre@gmail.com",
-			subject: `Nuevo pedido de ${newOrder.clientEmail}`,
-			html: `
-        <div>
-          <h4>Productos:</h4>
-          <table>
-            <thead>
-              <tr>
-                <th>Foto</th>
-                <th>Codigo</th>
-                <th>Producto</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${template}
-            </tbody>
-          </table>
+const mailerSendOrder = (products, email) => {
+	const sendOrderMessage =
+		`
+                        <div style="width:500px">
+                        <p>Nuevo pedido del usuario:</p>
+                        <h3>${email}</h3>
+                        <table style="text-align: center; border-collapse: collapse;width: 100%">
 
-          <h4>Datos de la orden:</h4>
-          <ul>
-            <li>Fecha y hora: ${newOrder.timestamp}</li>
-            <li>Email: ${newOrder.clientEmail}</li>
-            <li>Dirección de entrega: ${newOrder.clientAddress}</li>
-          </ul>
-        </div>`
-		});
-		logger.info(success);
-	} catch (error) {
-		logger.error(error);
-	}
+                        <thead>
+                            <tr>
+                                <th>Titulo</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Imagen</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>` +
+		products
+			.map(
+				(el, index) => `
+                            <tr>
+                                <td>${el.description}</td>
+                                <td>$ ${el.price}</td>
+                                <td>${el.quantity}</td>
+                                <td>
+                                    <img src=${el.thumbnail} style="width: 50px;height: 50px"/>
+                                </td>
+                            </tr>`
+			)
+			.join("") +
+		`</tbody>
+
+                          </table>
+
+                        </div>
+                          `;
+
+	const mailOptions = {
+		from: "Achurrita",
+		to: "achurre@gmail.com",
+		subject: `Nueva Orden de Compra de: ${email}`,
+		html: sendOrderMessage
+	};
+
+	mailer(mailOptions);
 };
 
-module.exports = { sendemail, sendNewSignupMail, sendOrderMail };
+module.exports = { mailer, mailerSendOrder };

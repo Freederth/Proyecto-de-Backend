@@ -1,4 +1,4 @@
-const { sendOrderMail } = require("../utils/sendMail");
+const { mailerSendOrder } = require("../utils/sendMail");
 const { Orden, Carrito } = require("../daos/index");
 const order = new Orden();
 const cart = new Carrito();
@@ -29,7 +29,7 @@ const postSendOrder = async (req, res) => {
 	productsList = cartByEmail.products;
 	const idOrder = await order.sendOrder(productsList, emailId);
 
-	sendOrderMail(productsList, emailId);
+	mailerSendOrder(productsList, emailId);
 
 	await cart.deleteById(cartByEmail._id);
 
