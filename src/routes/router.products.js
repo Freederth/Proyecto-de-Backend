@@ -5,87 +5,47 @@ const routerProductos = Router();
 const multer = require("multer");
 const storage = multer({ destinantion: "/upload" });
 
-const logger = require("../logs/loggers");
 const checkAuthentication = require("../utils/checkAuthentication");
 
-const { Producto } = require("../daos/index.js");
-const Productos = new Producto();
+const {
+	getProduct,
+	getProductId,
+	getProductCategory,
+	postProduct,
+	putProduct,
+	deleteProduct
+} = require("../controllers/controller.products");
 
 const productoSubido = storage.fields([
-	{ title: "title", thumbnail: "thumbnail", price: "price" }
+	{
+		title: "title",
+		thumbnail: "thumbnail",
+		price: "price",
+		category: "category",
+		description: "description",
+		stock: "stock"
+	}
 ]);
 
-routerProductos.get("/productos", async (req, res) => {
-	// y también quiero que lea de la base de dato si hay algo
-	const productosDB = await Productos.getAll();
-	res.render("productos", {
-		titulo: "Productos",
-		list: productosDB,
-		listExist: true,
-		producto: true
-	});
-});
+routerProductos.get("/productos", getProduct);
 
 // GET trae 1 o todos los productos
-routerProductos.get("/productos/:id?", (req, res) => {
-	const { id } = req.params;
+routerProductos.get("/productos/:id", getProductId);
 
-	if (id) {
-		Productos.getById(id).then(data => {
-			res.json(data);
-		});
-	} else {
-		Productos.getAll().then(data => {
-			res.json(data);
-		});
-	}
-});
+routerProductos.get("/productos/category/:category", getProductCategory);
 
 // POST crea 1 producto
 routerProductos.post(
 	"/productos",
 	productoSubido,
 	checkAuthentication,
-	async (req, res) => {
-		let timestamp = Date.now();
-		let { title, price, thumbnail } = req.body;
-		let producto = {
-			title,
-			price,
-			thumbnail,
-			timestamp
-		};
-		await Productos.save(producto);
-		res.render("producto");
-	}
+	postProduct
 );
 
 // PUT modifica 1 producto
-routerProductos.put("/productos/:id", checkAuthentication, (req, res) => {
-	let timestamp = Date.now();
-	let { title, price, thumbnail } = req.body;
-	let producto = {
-		title,
-		price,
-		thumbnail,
-		timestamp
-	};
-	Productos.updateById(producto).then(data => {
-		res.json({ id: data });
-	});
-});
+routerProductos.put("/productos/:id", checkAuthentication, putProduct);
 
 // DELETE borra 1 producto
-routerProductos.delete(
-	"/productos/:id",
-	checkAuthentication,
-	async (req, res) => {
-		const { id } = req.params;
-
-		Productos.deleteById(id).then(data => {
-			res.json({ delete: data });
-		});
-	}
-);
+routerProductos.delete("/productos/:id", checkAuthentication, deleteProduct);
 
 module.exports = { routerProductos };

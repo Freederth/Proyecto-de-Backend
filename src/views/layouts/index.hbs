@@ -42,15 +42,25 @@
                             <th scope="col"><b>Nombre</b> </th>
                             <th scope="col"><b>Precio</b> </th>
                             <th scope="col"> <b>Foto</b> </th>
+                            <th scope="col"> <b>Quedan</b> </th>
+                            <th scope="col"></th>
+
                         </tr>
                     </thead>
                     <tbody>
                         {{#each list}}
                         <tr>
-                            <td>{{title}}</td>
+                            <td> <a href="/productos/{{id}}" style="text-decoration:none; color: white">{{title}}</a>
+                            </td>
                             <td>${{price}}</td>
-                            <td><img src="{{thumbnail}}" style="max-width: 5rem;" class="card-img-top"
-                                    alt="{{thumbnail}}"></td>
+                            <td><a href="/productos/{{id}}"><img src="{{thumbnail}}" style="max-width: 5rem;"
+                                        class="card-img-top" alt="{{title}}"></a></td>
+                            <td>Sólo quedan {{stock}} unidades </td>
+
+                            <td><a href="/carrito/{{clientId}}"><button type="button" class="btn btn-success">Agregar al
+                                        carro</button></a>
+                            </td>
+
                             {{/each}}
                         </tr>
                     </tbody>
@@ -58,7 +68,7 @@
 
             </div>
             {{else}}
-            <div class="d-flex p-2 bd-highlight flex-wrap">
+            <div class=" d-flex p-2 bd-highlight flex-wrap">
                 <h1>No se encontraron elementos</h1>
             </div>
             {{/if}}
@@ -71,6 +81,8 @@
     {{> footer }}
 
     {{!-- boot strap --}}
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>

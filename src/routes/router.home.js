@@ -11,6 +11,7 @@ const checkAuthentication = require("../utils/checkAuthentication");
 // note deja entrar si no estás loggeado
 routerHome.get("/", checkAuthentication, async (req, res) => {
 	const productos = await Productos.getAll();
+
 	res.render("index", {
 		titulo: "Productos disponibles",
 		list: productos,

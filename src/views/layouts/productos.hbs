@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="/socket.io/socket.io.js"></script>
 
-    <title>Productos faker</title>
+    <title>Productos</title>
 
 </head>
 
@@ -24,7 +23,7 @@
         <br>
 
         <br>
-        {{> title }}
+
         <div class="container">
             {{#if listExist}}
             <div class="d-flex p-2 bd-highlight flex-wrap">
@@ -36,15 +35,24 @@
                             <th scope="col"><b>Nombre</b> </th>
                             <th scope="col"><b>Precio</b> </th>
                             <th scope="col"> <b>Foto</b> </th>
+                            <th scope="col"> <b>Quedan</b> </th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
                         {{#each list}}
                         <tr>
-                            <td>{{title}}</td>
+                            <td> <a href="/productos/{{id}}" style="text-decoration:none; color:white">{{title}}</a>
+                            </td>
                             <td>${{price}}</td>
-                            <td><img src="{{thumbnail}}" style="max-width: 5rem;" class="card-img-top"
-                                    alt="{{thumbnail}}"></td>
+                            <td><a href="/productos/{{id}}"><img src="{{thumbnail}}" style="max-width: 5rem;"
+                                        class="card-img-top" alt="{{title}}"></a></td>
+                            <td>Sólo quedan {{stock}} unidades </td>
+
+                            <td><a href="/carrito/{{clientId}}"><button type="button" class="btn btn-success">Agregar al
+                                        carro</button></a>
+                            </td>
+
                             {{/each}}
                         </tr>
                     </tbody>
@@ -63,7 +71,7 @@
     {{> footer }}
 
     {{!-- boot strap --}}
-    <script src="client.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>

@@ -1,37 +1,22 @@
 const path = require("path");
-
 const dotenv = require("dotenv");
 dotenv.config({ path: path.join("../.env") });
 
 const express = require("express");
 const { Router } = express;
-
 const routerRegister = Router();
 
 const logger = require("../logs/loggers");
-const nodemailer = require("nodemailer");
 
 const fs = require("fs");
 const imagenesPath = require("../img/img.paths.js");
-
-// const { ACCOUNT_SID, AUTH_TOKEN, GMAIL, TWILIO_NUMBER } = process.env;
-const { GMAIL } = process.env;
-
-// const client = twilio(ACCOUNT_SID, AUTH_TOKEN);
 
 const multer = require("multer");
 const upload = multer();
 
 const passport = require("../utils/passportMiddleware");
 
-const transporter = nodemailer.createTransport({
-	host: "smtp.gmail.com",
-	port: 465,
-	auth: {
-		user: "achurre@gmail.com",
-		pass: GMAIL
-	}
-});
+const { sendNewSignupMail } = require("../utils/sendMail");
 
 routerRegister.get("/register", (req, res) => {
 	res.render("register");
@@ -49,24 +34,22 @@ routerRegister.post(
 			path.join(imagenesPath, req.body.username + ".jpg"),
 			req.file.buffer
 		);
-		const mailOptions = {
-			from: "Achurrita",
-			to: "achurre@gmail.com",
-			subject: "Usuario nuevo registrado",
-			html: `<h1>¡${req.body.username} se ha unido al club!</h1>`
+		(error, data) => {
+			if (data) {
+				sendNewSignupMail(data);
+				return res
+					.status(200)
+					.json({ success: "Se ha registrado correctamente al usuario." });
+			}
+			/*Parche ineficiente para borrar foto subida al servidor, en caso de que falle el registro*/
+			if (req.file)
+				deleteFile(process.cwd() + `/src/public/img/${req.file.filename}`);
+			if (error) return res.status(404).json({ error });
+			res.status(400).json({ error: "Falló el registro de usuario." });
 		};
 		console.log("prueba");
 
-		await transporter.sendMail(mailOptions, function (error, info) {
-			if (error) {
-				logger.error(error);
-			} else {
-				logger.info("Email enviado" + info.response);
-				console.log("mail enviado");
-			}
-
-			res.render("/login", { username: req.body.username });
-		});
+		res.render("/login", { username: req.body.username });
 	}
 );
 
