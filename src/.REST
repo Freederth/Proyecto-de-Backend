@@ -5,21 +5,35 @@
 #     "quantity":4
 # }
 
-POST http://localhost:8080/login HTTP/1.1
-content-type: application/json
-
-{
-    "username": "asdf@asdf.cl",
-    "password": "1234"
-}
-
-# POST http://localhost:8080/carrito HTTP/1.1
+# POST http://localhost:8080/login HTTP/1.1
 # content-type: application/json
 
 # {
+#     "username": "asdf@asdf.cl",
+#     "password": "1234"
 # }
 
-# GET http://localhost:8080/carrito/63bba1c0c73f557ac0f16aa2 HTTP/1.1
+POST http://localhost:8080/carrito/achurre@gmail.com/productos HTTP/1.1
+content-type: application/json
+
+{
+    "username": "achurre@gmail.com",
+    "address": "mi casa 123",
+    "products": [ {
+        "_id": "63bb5159f84d93cfc339e45e",
+        "description": "Galletas de Concha",
+        "price": 7.5,
+        "stock": 18,
+        "category": "abarrotes"
+    }],
+
+}
+
+
+
+
+
+# GET http://localhost:8080/carrito/achurre@gmail.com/ HTTP/1.1
 # content-type: application/json
 
 # {

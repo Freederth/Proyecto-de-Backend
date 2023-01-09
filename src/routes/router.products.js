@@ -27,25 +27,20 @@ const productoSubido = storage.fields([
 	}
 ]);
 
-routerProductos.get("/productos", getProduct);
+routerProductos.get("/", getProduct);
 
 // GET trae 1 o todos los productos
-routerProductos.get("/productos/:id", getProductId);
+routerProductos.get("/:id", getProductId);
 
-routerProductos.get("/productos/category/:category", getProductCategory);
+routerProductos.get("/category/:category", getProductCategory);
 
 // POST crea 1 producto
-routerProductos.post(
-	"/productos",
-	productoSubido,
-	checkAuthentication,
-	postProduct
-);
+routerProductos.post("/", productoSubido, checkAuthentication, postProduct);
 
 // PUT modifica 1 producto
-routerProductos.put("/productos/:id", checkAuthentication, putProduct);
+routerProductos.put("/:id", checkAuthentication, putProduct);
 
 // DELETE borra 1 producto
-routerProductos.delete("/productos/:id", checkAuthentication, deleteProduct);
+routerProductos.delete("/:id", checkAuthentication, deleteProduct);
 
 module.exports = { routerProductos };

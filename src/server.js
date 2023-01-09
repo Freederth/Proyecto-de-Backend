@@ -27,6 +27,7 @@ const { routerProfile } = require("./routes/router.profile");
 const { routerRegister } = require("./routes/router.register");
 const { routerInfo } = require("./routes/router.info");
 const { routerChat } = require("./routes/router.chat");
+const { routerOrden } = require("./routes/router.orders.js");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -81,9 +82,11 @@ app.use(passport.session());
 // HOME
 app.use("/", routerHome);
 // PRODUCTOS
-app.use("/", routerProductos);
+app.use("/productos", routerProductos);
 // CARRITO
-app.use("/", routerCarrito);
+app.use("/carrito", routerCarrito);
+//ÓRDENES
+app.use("/ordenes", routerOrden);
 // LOGIN
 app.use("/", routerLogin);
 // PROFILE

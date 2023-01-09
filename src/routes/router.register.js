@@ -16,7 +16,27 @@ const upload = multer();
 
 const passport = require("../utils/passportMiddleware");
 
-const { sendNewSignupMail } = require("../utils/sendMail");
+const { createTransport } = require("nodemailer");
+const { GMAIL } = process.env;
+
+const transporter = createTransport({
+	host: "gmail",
+	port: 587,
+	auth: {
+		user: "achurre@gmail.com",
+		pass: GMAIL
+	}
+});
+
+const mailOptions = {
+	from: "Achurrita",
+	to: "achurre@gmail.com",
+	subject: "Usuario nuevo registrado",
+	html: `
+        <h2>Hola estúpido</h2>
+        <p>¡Bienvenido al nuevo usuario!</p>
+      `
+};
 
 routerRegister.get("/register", (req, res) => {
 	res.render("register");
@@ -30,26 +50,14 @@ routerRegister.post(
 		successRedirect: "/"
 	}),
 	async (req, res) => {
-		fs.writeFileSync(
-			path.join(imagenesPath, req.body.username + ".jpg"),
-			req.file.buffer
-		);
-		(error, data) => {
-			if (data) {
-				sendNewSignupMail(data);
-				return res
-					.status(200)
-					.json({ success: "Se ha registrado correctamente al usuario." });
-			}
-			/*Parche ineficiente para borrar foto subida al servidor, en caso de que falle el registro*/
-			if (req.file)
-				deleteFile(process.cwd() + `/src/public/img/${req.file.filename}`);
-			if (error) return res.status(404).json({ error });
-			res.status(400).json({ error: "Falló el registro de usuario." });
-		};
-		console.log("prueba");
-
-		res.render("/login", { username: req.body.username });
+		try {
+			const info = await transporter.sendMail(mailOptions);
+			console.log(info);
+		} catch (error) {
+			logger.error("ERROR NODEMAILER");
+		} finally {
+			res.render("/login", { username: req.body.username });
+		}
 	}
 );
 

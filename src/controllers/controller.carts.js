@@ -1,54 +1,68 @@
 const { Carrito } = require("../daos/index.js");
+const logger = require("../logs/loggers.js");
 const Carritos = new Carrito();
 
-const postCartId = async (req, res, next) => {
+const postCartId = async (req, res) => {
+	const idCart = await Carritos.save(req.body);
 	try {
-		const { clientId } = req.params;
-		const id = await Carritos.createCart(clientId);
-		res.json({ id });
+		res.json(idCart);
 	} catch (error) {
-		next(error);
+		logger.error(error);
 	}
 };
 
-const deleteCartId = async (req, res, next) => {
+const deleteCartId = async (req, res) => {
+	const { id } = req.params;
+
+	try {
+		await Carritos.deleteById(id);
+	} catch (error) {
+		logger.error(error);
+	}
+};
+
+const getProductsFromCart = async (req, res) => {
 	const { id } = req.params;
 	try {
-		const msg = await Carritos.deleteById(id);
-		res.status(200).json(msg);
+		const cartById = await Carritos.getById(id);
+		productsList = cartById.products;
+		res.json(productsList);
 	} catch (error) {
-		next(error);
+		logger.error(error);
 	}
 };
 
-const getProductsFromCart = async (req, res, next) => {
-	const { clientId } = req.params;
+const postProductToCart = async (req, res) => {
+	const { id } = req.params;
+	const productToAdd = req.body;
+
 	try {
-		const productsFromCart = await Carritos.getProducts(clientId);
-		res.status(200).json(productsFromCart);
+		cartById = await Carritos.addProductToCart(id, productToAdd);
+		res.json(cartById);
 	} catch (error) {
-		next(error);
+		logger.error(error);
 	}
 };
 
-const postProductToCart = async (req, res, next) => {
-	const { id, idProd } = req.params;
-	const { quantity } = req.body;
+const deleteProductFromCart = async (req, res) => {
+	const { idCart, idProduct } = req.params;
+
 	try {
-		const msg = await Carritos.insertProduct(id, idProd, quantity);
-		res.status(200).json(msg);
+		await Carritos.deleteProductById(idCart, idProduct);
 	} catch (error) {
-		next(error);
+		logger.error(error);
 	}
 };
 
-const deleteProductFromCart = async (req, res, next) => {
-	const { clientId, idProd } = req.params;
+const getCartByEmail = async (req, res) => {
+	const { emailId } = req.params;
+	console.log("email: ", emailId);
 	try {
-		const msg = await Carritos.deleteProduct(clientId, idProd);
-		res.status(200).json(msg);
+		const cartByEmail = await Carritos.getByEmail(emailId);
+		console.log(cartByEmail);
+		res.json(cartByEmail);
 	} catch (error) {
-		next(error);
+		logger.error(error);
 	}
 };
 
@@ -57,5 +71,6 @@ module.exports = {
 	deleteCartId,
 	getProductsFromCart,
 	postProductToCart,
-	deleteProductFromCart
+	deleteProductFromCart,
+	getCartByEmail
 };

@@ -7,24 +7,25 @@ const {
 	deleteCartId,
 	getProductsFromCart,
 	postProductToCart,
-	deleteProductFromCart
+	deleteProductFromCart,
+	getCartByEmail
 } = require("../controllers/controller.carts");
 
-routerCarrito.post("/carrito/:clientId", postCartId);
+// --------- POST: Crea un carrito y devuelve su ID --------
+routerCarrito.post("/", postCartId);
 
-// Delete borra 1 carrito completo
-routerCarrito.delete("/carrito/:id", deleteCartId);
+// --------- DELETE: Borra un carrito completo por ID -------
+routerCarrito.delete("/:id", deleteCartId);
 
 // GET lista de productos de 1 carrito
-routerCarrito.get("/carrito/:clientId/productos", getProductsFromCart);
+routerCarrito.get("/:id/productos", getProductsFromCart);
 
 // POST guardar 1 producto en 1 carrito
-routerCarrito.post("/carrito/:id/productos/:idProd", postProductToCart);
+routerCarrito.post("/:id/productos/:idProd", postProductToCart);
 
 // DELETE borra 1 producto de 1 carrito
-routerCarrito.delete(
-	"/carrito/:clientId/productos/:idProd",
-	deleteProductFromCart
-);
+routerCarrito.delete("/:clientId/productos/:idProd", deleteProductFromCart);
+
+routerCarrito.get("/:emailId", getCartByEmail);
 
 module.exports = { routerCarrito };
