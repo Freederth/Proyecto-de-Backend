@@ -25,4 +25,4 @@ routerOrden.put("/:id", putOrder);
 //************************ DELETE (Elimina un producto según su ID) ***********************
 routerOrden.delete("/:id", deleteOrderById);
 
-module.exports = routerOrden;
+module.exports = { routerOrden };
