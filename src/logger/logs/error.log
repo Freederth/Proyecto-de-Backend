@@ -1,0 +1,1887 @@
+[2022-10-25T15:45:52.661] [ERROR] prod - Error al loguearse
+[2022-11-06T14:59:21.651] [ERROR] prod - Error al loguearse
+[2022-11-08T14:27:57.291] [ERROR] prod - Error al loguearse
+[2022-12-24T14:43:42.203] [ERROR] prod - CastError: Cast to Number failed for value "6323641f1a6e8f629b4c8d1e" (type string) at path "id" for model "Carts"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"6323641f1a6e8f629b4c8d1e"',
+  kind: 'Number',
+  value: '6323641f1a6e8f629b4c8d1e',
+  path: 'id',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\schema\number.js:376:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaNumber.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\schema\number.js:430:14)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\query.js:5312:12)
+      at Query._castConditions (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\query.js:2198:10)
+      at model.Query.<anonymous> (C:\Users\CMT\Desktop\Workspace\backend\entrega_03\node_modules\mongoose\lib\query.js:2225:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string'
+}
+[2023-01-02T16:35:30.240] [ERROR] prod - CastError: Cast to ObjectId failed for value "6323641" (type number) at path "_id" for model "Carts"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"6323641"',
+  kind: 'ObjectId',
+  value: 6323641,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-02T17:26:24.019] [ERROR] prod - Error al registrarse
+[2023-01-02T17:32:50.483] [ERROR] prod - Error al registrarse
+[2023-01-02T17:35:24.475] [ERROR] prod - Error al registrarse
+[2023-01-02T17:36:16.294] [ERROR] prod - Error al registrarse
+[2023-01-02T17:37:38.375] [ERROR] prod - Error al registrarse
+[2023-01-02T17:47:44.525] [ERROR] prod - Error al registrarse
+[2023-01-02T17:48:44.254] [ERROR] prod - Error al registrarse
+[2023-01-02T17:59:06.806] [ERROR] prod - Error al registrarse
+[2023-01-02T18:01:09.433] [ERROR] prod - Error al loguearse
+[2023-01-02T18:02:27.440] [ERROR] prod - Error al loguearse
+[2023-01-02T18:05:23.004] [ERROR] prod - Error al loguearse
+[2023-01-02T18:09:45.467] [ERROR] prod - Error al loguearse
+[2023-01-02T18:09:57.195] [ERROR] prod - Error al loguearse
+[2023-01-02T18:16:13.775] [ERROR] prod - Error al loguearse
+[2023-01-02T18:17:00.746] [ERROR] prod - Error al loguearse
+[2023-01-02T20:47:55.525] [ERROR] prod - Error al loguearse
+[2023-01-03T12:41:28.446] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:43:07.206] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:43:52.083] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:46:40.557] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:49:05.590] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:51:49.563] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:54:07.358] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:55:22.572] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:56:06.651] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T12:59:22.079] [ERROR] prod - CastError: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"NaN"',
+  kind: 'ObjectId',
+  value: NaN,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T13:01:11.444] [ERROR] prod - CastError: Cast to ObjectId failed for value "63" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"63"',
+  kind: 'ObjectId',
+  value: 63,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T13:01:55.783] [ERROR] prod - CastError: Cast to ObjectId failed for value "63" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"63"',
+  kind: 'ObjectId',
+  value: 63,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T13:09:19.282] [ERROR] prod - ReferenceError: mensajesFiltrados is not defined
+    at ProductsDaoMongoDb.getProductByCategory (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\productos\ProductsDaoMongoDb.js:13:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getProductByCategory (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\controllers\products.controller.js:29:26)
+[2023-01-03T13:30:48.107] [ERROR] prod - CastError: Cast to ObjectId failed for value "63" (type number) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"63"',
+  kind: 'ObjectId',
+  value: 63,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T15:04:40.581] [ERROR] prod - CastError: Cast to ObjectId failed for value "63" (type number) at path "_id" for model "Carts"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"63"',
+  kind: 'ObjectId',
+  value: 63,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T15:15:07.602] [ERROR] prod - CastError: Cast to ObjectId failed for value "63" (type number) at path "_id" for model "Carts"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"63"',
+  kind: 'ObjectId',
+  value: 63,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-03T15:15:07.612] [ERROR] prod - CastError: Cast to ObjectId failed for value "63" (type number) at path "_id" for model "Carts"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"63"',
+  kind: 'ObjectId',
+  value: 63,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'number'
+}
+[2023-01-05T13:56:38.281] [ERROR] prod - Error: Orders validation failed: state: Path `state` is required., timestamp: Path `timestamp` is required., orderNumber: Path `orderNumber` is required.
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    state: ValidatorError: Path `state` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'state',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    timestamp: ValidatorError: Path `timestamp` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'timestamp',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    orderNumber: ValidatorError: Path `orderNumber` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'orderNumber',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-05T15:06:54.946] [ERROR] prod - Error: Orders validation failed: state: Path `state` is required., timestamp: Path `timestamp` is required., orderNumber: Path `orderNumber` is required.
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    state: ValidatorError: Path `state` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'state',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    timestamp: ValidatorError: Path `timestamp` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'timestamp',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    orderNumber: ValidatorError: Path `orderNumber` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'orderNumber',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-05T15:11:33.419] [ERROR] prod - Error: Orders validation failed: state: Path `state` is required., timestamp: Path `timestamp` is required., orderNumber: Path `orderNumber` is required.
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    state: ValidatorError: Path `state` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'state',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    timestamp: ValidatorError: Path `timestamp` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'timestamp',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    orderNumber: ValidatorError: Path `orderNumber` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'orderNumber',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-05T15:17:37.844] [ERROR] prod - Error: Orders validation failed: email: Path `email` is required.
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-05T15:21:40.531] [ERROR] prod - Error: Orders validation failed: email: Path `email` is required.
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-05T15:23:58.878] [ERROR] prod - Error: Orders validation failed: email: Path `email` is required.
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:2834:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-05T15:25:49.031] [ERROR] prod - Error: Orders validation failed: email: Cast to string failed for value "{
+  products: [
+    {
+      _id: '63b4463ffed450c9ffcd2f4f',
+      description: 'Mouse',
+      category: 'informatica',
+      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',
+      price: 1000,
+      quantity: 1
+    },
+    {
+      _id: '63b466de5bd9c2611a4f1242',
+      description: 'Calculadora Cientifica',
+      category: 'libreria',
+      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',
+      price: 500,
+      quantity: 2
+    }
+  ],
+  email: 'sofi@gmail.com'
+}" (type Object) at path "email"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    email: CastError: Cast to string failed for value "{
+      products: [
+        {
+          _id: '63b4463ffed450c9ffcd2f4f',
+          description: 'Mouse',
+          category: 'informatica',
+          thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',
+          price: 1000,
+          quantity: 1
+        },
+        {
+          _id: '63b466de5bd9c2611a4f1242',
+          description: 'Calculadora Cientifica',
+          category: 'libreria',
+          thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',
+          price: 500,
+          quantity: 2
+        }
+      ],
+      email: 'sofi@gmail.com'
+    }" (type Object) at path "email"
+        at SchemaString.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\string.js:603:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:24:33)
+        at postSendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\controllers\orders.controller.js:36:33) {
+      stringValue: '"{\n' +
+        '  products: [\n' +
+        '    {\n' +
+        "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+        "      description: 'Mouse',\n" +
+        "      category: 'informatica',\n" +
+        "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+        '      price: 1000,\n' +
+        '      quantity: 1\n' +
+        '    },\n' +
+        '    {\n' +
+        "      _id: '63b466de5bd9c2611a4f1242',\n" +
+        "      description: 'Calculadora Cientifica',\n" +
+        "      category: 'libreria',\n" +
+        "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+        '      price: 500,\n' +
+        '      quantity: 2\n' +
+        '    }\n' +
+        '  ],\n' +
+        "  email: 'sofi@gmail.com'\n" +
+        '}"',
+      messageFormat: undefined,
+      kind: 'string',
+      value: [Object],
+      path: 'email',
+      reason: null,
+      valueType: 'Object'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T00:03:45.523] [ERROR] prod - Error: Orders validation failed: orderNumber: Cast to Number failed for value "async getLastOrder() {\r\n' +
+  '        try {\r\n' +
+  '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+  '            return lastOrder;\r\n' +
+  '        } catch (error) {\r\n' +
+  '            console.log("Ocurrio un error: " + error);\r\n' +
+  '        }\r\n' +
+  '    }1" (type string) at path "orderNumber"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    orderNumber: CastError: Cast to Number failed for value "async getLastOrder() {\r\n' +
+      '        try {\r\n' +
+      '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+      '            return lastOrder;\r\n' +
+      '        } catch (error) {\r\n' +
+      '            console.log("Ocurrio un error: " + error);\r\n' +
+      '        }\r\n' +
+      '    }1" (type string) at path "orderNumber"
+        at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:378:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:37:33)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      stringValue: `"async getLastOrder() {\\r\\n' +\n` +
+        "  '        try {\\r\\n' +\n" +
+        "  '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\\r\\n' +\n" +
+        "  '            return lastOrder;\\r\\n' +\n" +
+        "  '        } catch (error) {\\r\\n' +\n" +
+        `  '            console.log("Ocurrio un error: " + error);\\r\\n' +\n` +
+        "  '        }\\r\\n' +\n" +
+        `  '    }1"`,
+      messageFormat: undefined,
+      kind: 'Number',
+      value: 'async getLastOrder() {\r\n' +
+        '        try {\r\n' +
+        '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+        '            return lastOrder;\r\n' +
+        '        } catch (error) {\r\n' +
+        '            console.log("Ocurrio un error: " + error);\r\n' +
+        '        }\r\n' +
+        '    }1',
+      path: 'orderNumber',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:376:12)
+          at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+          at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+          at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+          at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+          at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+          at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:37:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T00:07:03.967] [ERROR] prod - Error: Orders validation failed: orderNumber: Cast to Number failed for value "async getLastOrder() {\r\n' +
+  '        try {\r\n' +
+  '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+  '            console.log(lastOrder);\r\n' +
+  '            return lastOrder;\r\n' +
+  '        } catch (error) {\r\n' +
+  '            console.log("Ocurrio un error: " + error);\r\n' +
+  '        }\r\n' +
+  '    }1" (type string) at path "orderNumber"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    orderNumber: CastError: Cast to Number failed for value "async getLastOrder() {\r\n' +
+      '        try {\r\n' +
+      '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+      '            console.log(lastOrder);\r\n' +
+      '            return lastOrder;\r\n' +
+      '        } catch (error) {\r\n' +
+      '            console.log("Ocurrio un error: " + error);\r\n' +
+      '        }\r\n' +
+      '    }1" (type string) at path "orderNumber"
+        at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:378:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:38:33)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      stringValue: `"async getLastOrder() {\\r\\n' +\n` +
+        "  '        try {\\r\\n' +\n" +
+        "  '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\\r\\n' +\n" +
+        "  '            console.log(lastOrder);\\r\\n' +\n" +
+        "  '            return lastOrder;\\r\\n' +\n" +
+        "  '        } catch (error) {\\r\\n' +\n" +
+        `  '            console.log("Ocurrio un error: " + error);\\r\\n' +\n` +
+        "  '        }\\r\\n' +\n" +
+        `  '    }1"`,
+      messageFormat: undefined,
+      kind: 'Number',
+      value: 'async getLastOrder() {\r\n' +
+        '        try {\r\n' +
+        '            let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+        '            console.log(lastOrder);\r\n' +
+        '            return lastOrder;\r\n' +
+        '        } catch (error) {\r\n' +
+        '            console.log("Ocurrio un error: " + error);\r\n' +
+        '        }\r\n' +
+        '    }1',
+      path: 'orderNumber',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:376:12)
+          at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+          at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+          at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+          at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+          at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+          at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:38:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T00:09:27.207] [ERROR] prod - Error: Orders validation failed: orderNumber: Cast to Number failed for value "async getLastOrder() {\r\n' +
+  '        try {\r\n' +
+  '            // let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+  '            let lastOrder = await this.model.find().limit(1)\r\n' +
+  '            console.log(lastOrder);\r\n' +
+  '            return lastOrder;\r\n' +
+  '        } catch (error) {\r\n' +
+  '            console.log("Ocurrio un error: " + error);\r\n' +
+  '        }\r\n' +
+  '    }1" (type string) at path "orderNumber"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    orderNumber: CastError: Cast to Number failed for value "async getLastOrder() {\r\n' +
+      '        try {\r\n' +
+      '            // let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+      '            let lastOrder = await this.model.find().limit(1)\r\n' +
+      '            console.log(lastOrder);\r\n' +
+      '            return lastOrder;\r\n' +
+      '        } catch (error) {\r\n' +
+      '            console.log("Ocurrio un error: " + error);\r\n' +
+      '        }\r\n' +
+      '    }1" (type string) at path "orderNumber"
+        at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:378:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      stringValue: `"async getLastOrder() {\\r\\n' +\n` +
+        "  '        try {\\r\\n' +\n" +
+        "  '            // let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\\r\\n' +\n" +
+        "  '            let lastOrder = await this.model.find().limit(1)\\r\\n' +\n" +
+        "  '            console.log(lastOrder);\\r\\n' +\n" +
+        "  '            return lastOrder;\\r\\n' +\n" +
+        "  '        } catch (error) {\\r\\n' +\n" +
+        `  '            console.log("Ocurrio un error: " + error);\\r\\n' +\n` +
+        "  '        }\\r\\n' +\n" +
+        `  '    }1"`,
+      messageFormat: undefined,
+      kind: 'Number',
+      value: 'async getLastOrder() {\r\n' +
+        '        try {\r\n' +
+        '            // let lastOrder = await this.model.find().limit(1).sort({ $natural: -1 })\r\n' +
+        '            let lastOrder = await this.model.find().limit(1)\r\n' +
+        '            console.log(lastOrder);\r\n' +
+        '            return lastOrder;\r\n' +
+        '        } catch (error) {\r\n' +
+        '            console.log("Ocurrio un error: " + error);\r\n' +
+        '        }\r\n' +
+        '    }1',
+      path: 'orderNumber',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:376:12)
+          at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+          at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+          at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+          at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+          at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+          at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T00:12:07.620] [ERROR] prod - Error: Orders validation failed: orderNumber: Cast to Number failed for value "{\n' +
+  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+  '  items: [\n' +
+  '    {\n' +
+  "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+  "      description: 'Mouse',\n" +
+  "      category: 'informatica',\n" +
+  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+  '      price: 1000,\n' +
+  '      quantity: 1\n' +
+  '    },\n' +
+  '    {\n' +
+  "      _id: '63b466de5bd9c2611a4f1242',\n" +
+  "      description: 'Calculadora Cientifica',\n" +
+  "      category: 'libreria',\n" +
+  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+  '      price: 500,\n' +
+  '      quantity: 2\n' +
+  '    }\n' +
+  '  ],\n' +
+  '  orderNumber: 1,\n' +
+  "  timestamp: '5/1/2023, 15:31:41',\n" +
+  "  state: 'generada',\n" +
+  "  email: 'sofi@gmail.com',\n" +
+  '  __v: 0\n' +
+  '}1" (type string) at path "orderNumber"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    orderNumber: CastError: Cast to Number failed for value "{\n' +
+      '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+      '  items: [\n' +
+      '    {\n' +
+      "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+      "      description: 'Mouse',\n" +
+      "      category: 'informatica',\n" +
+      "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+      '      price: 1000,\n' +
+      '      quantity: 1\n' +
+      '    },\n' +
+      '    {\n' +
+      "      _id: '63b466de5bd9c2611a4f1242',\n" +
+      "      description: 'Calculadora Cientifica',\n" +
+      "      category: 'libreria',\n" +
+      "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+      '      price: 500,\n' +
+      '      quantity: 2\n' +
+      '    }\n' +
+      '  ],\n' +
+      '  orderNumber: 1,\n' +
+      "  timestamp: '5/1/2023, 15:31:41',\n" +
+      "  state: 'generada',\n" +
+      "  email: 'sofi@gmail.com',\n" +
+      '  __v: 0\n' +
+      '}1" (type string) at path "orderNumber"
+        at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:378:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      stringValue: `"{\\n' +\n` +
+        `  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\\n' +\n` +
+        "  '  items: [\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b4463ffed450c9ffcd2f4f',\\n" +\n` +
+        `  "      description: 'Mouse',\\n" +\n` +
+        `  "      category: 'informatica',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\\n" +\n` +
+        "  '      price: 1000,\\n' +\n" +
+        "  '      quantity: 1\\n' +\n" +
+        "  '    },\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b466de5bd9c2611a4f1242',\\n" +\n` +
+        `  "      description: 'Calculadora Cientifica',\\n" +\n` +
+        `  "      category: 'libreria',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\\n" +\n` +
+        "  '      price: 500,\\n' +\n" +
+        "  '      quantity: 2\\n' +\n" +
+        "  '    }\\n' +\n" +
+        "  '  ],\\n' +\n" +
+        "  '  orderNumber: 1,\\n' +\n" +
+        `  "  timestamp: '5/1/2023, 15:31:41',\\n" +\n` +
+        `  "  state: 'generada',\\n" +\n` +
+        `  "  email: 'sofi@gmail.com',\\n" +\n` +
+        "  '  __v: 0\\n' +\n" +
+        `  '}1"`,
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '{\n' +
+        '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+        '  items: [\n' +
+        '    {\n' +
+        "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+        "      description: 'Mouse',\n" +
+        "      category: 'informatica',\n" +
+        "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+        '      price: 1000,\n' +
+        '      quantity: 1\n' +
+        '    },\n' +
+        '    {\n' +
+        "      _id: '63b466de5bd9c2611a4f1242',\n" +
+        "      description: 'Calculadora Cientifica',\n" +
+        "      category: 'libreria',\n" +
+        "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+        '      price: 500,\n' +
+        '      quantity: 2\n' +
+        '    }\n' +
+        '  ],\n' +
+        '  orderNumber: 1,\n' +
+        "  timestamp: '5/1/2023, 15:31:41',\n" +
+        "  state: 'generada',\n" +
+        "  email: 'sofi@gmail.com',\n" +
+        '  __v: 0\n' +
+        '}1',
+      path: 'orderNumber',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:376:12)
+          at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+          at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+          at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+          at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+          at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+          at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T00:14:17.918] [ERROR] prod - Error: Orders validation failed: orderNumber: Cast to Number failed for value "{\n' +
+  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+  '  items: [\n' +
+  '    {\n' +
+  "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+  "      description: 'Mouse',\n" +
+  "      category: 'informatica',\n" +
+  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+  '      price: 1000,\n' +
+  '      quantity: 1\n' +
+  '    },\n' +
+  '    {\n' +
+  "      _id: '63b466de5bd9c2611a4f1242',\n" +
+  "      description: 'Calculadora Cientifica',\n" +
+  "      category: 'libreria',\n" +
+  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+  '      price: 500,\n' +
+  '      quantity: 2\n' +
+  '    }\n' +
+  '  ],\n' +
+  '  orderNumber: 1,\n' +
+  "  timestamp: '5/1/2023, 15:31:41',\n" +
+  "  state: 'generada',\n" +
+  "  email: 'sofi@gmail.com',\n" +
+  '  __v: 0\n' +
+  '}1" (type string) at path "orderNumber"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    orderNumber: CastError: Cast to Number failed for value "{\n' +
+      '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+      '  items: [\n' +
+      '    {\n' +
+      "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+      "      description: 'Mouse',\n" +
+      "      category: 'informatica',\n" +
+      "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+      '      price: 1000,\n' +
+      '      quantity: 1\n' +
+      '    },\n' +
+      '    {\n' +
+      "      _id: '63b466de5bd9c2611a4f1242',\n" +
+      "      description: 'Calculadora Cientifica',\n" +
+      "      category: 'libreria',\n" +
+      "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+      '      price: 500,\n' +
+      '      quantity: 2\n' +
+      '    }\n' +
+      '  ],\n' +
+      '  orderNumber: 1,\n' +
+      "  timestamp: '5/1/2023, 15:31:41',\n" +
+      "  state: 'generada',\n" +
+      "  email: 'sofi@gmail.com',\n" +
+      '  __v: 0\n' +
+      '}1" (type string) at path "orderNumber"
+        at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:378:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      stringValue: `"{\\n' +\n` +
+        `  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\\n' +\n` +
+        "  '  items: [\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b4463ffed450c9ffcd2f4f',\\n" +\n` +
+        `  "      description: 'Mouse',\\n" +\n` +
+        `  "      category: 'informatica',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\\n" +\n` +
+        "  '      price: 1000,\\n' +\n" +
+        "  '      quantity: 1\\n' +\n" +
+        "  '    },\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b466de5bd9c2611a4f1242',\\n" +\n` +
+        `  "      description: 'Calculadora Cientifica',\\n" +\n` +
+        `  "      category: 'libreria',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\\n" +\n` +
+        "  '      price: 500,\\n' +\n" +
+        "  '      quantity: 2\\n' +\n" +
+        "  '    }\\n' +\n" +
+        "  '  ],\\n' +\n" +
+        "  '  orderNumber: 1,\\n' +\n" +
+        `  "  timestamp: '5/1/2023, 15:31:41',\\n" +\n` +
+        `  "  state: 'generada',\\n" +\n` +
+        `  "  email: 'sofi@gmail.com',\\n" +\n` +
+        "  '  __v: 0\\n' +\n" +
+        `  '}1"`,
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '{\n' +
+        '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+        '  items: [\n' +
+        '    {\n' +
+        "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+        "      description: 'Mouse',\n" +
+        "      category: 'informatica',\n" +
+        "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+        '      price: 1000,\n' +
+        '      quantity: 1\n' +
+        '    },\n' +
+        '    {\n' +
+        "      _id: '63b466de5bd9c2611a4f1242',\n" +
+        "      description: 'Calculadora Cientifica',\n" +
+        "      category: 'libreria',\n" +
+        "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+        '      price: 500,\n' +
+        '      quantity: 2\n' +
+        '    }\n' +
+        '  ],\n' +
+        '  orderNumber: 1,\n' +
+        "  timestamp: '5/1/2023, 15:31:41',\n" +
+        "  state: 'generada',\n" +
+        "  email: 'sofi@gmail.com',\n" +
+        '  __v: 0\n' +
+        '}1',
+      path: 'orderNumber',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:376:12)
+          at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+          at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+          at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+          at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+          at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+          at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T00:17:20.352] [ERROR] prod - Error: Orders validation failed: orderNumber: Cast to Number failed for value "{\n' +
+  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+  '  items: [\n' +
+  '    {\n' +
+  "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+  "      description: 'Mouse',\n" +
+  "      category: 'informatica',\n" +
+  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+  '      price: 1000,\n' +
+  '      quantity: 1\n' +
+  '    },\n' +
+  '    {\n' +
+  "      _id: '63b466de5bd9c2611a4f1242',\n" +
+  "      description: 'Calculadora Cientifica',\n" +
+  "      category: 'libreria',\n" +
+  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+  '      price: 500,\n' +
+  '      quantity: 2\n' +
+  '    }\n' +
+  '  ],\n' +
+  '  orderNumber: 1,\n' +
+  "  timestamp: '5/1/2023, 15:31:41',\n" +
+  "  state: 'generada',\n" +
+  "  email: 'sofi@gmail.com',\n" +
+  '  __v: 0\n' +
+  '}1" (type string) at path "orderNumber"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    orderNumber: CastError: Cast to Number failed for value "{\n' +
+      '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+      '  items: [\n' +
+      '    {\n' +
+      "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+      "      description: 'Mouse',\n" +
+      "      category: 'informatica',\n" +
+      "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+      '      price: 1000,\n' +
+      '      quantity: 1\n' +
+      '    },\n' +
+      '    {\n' +
+      "      _id: '63b466de5bd9c2611a4f1242',\n" +
+      "      description: 'Calculadora Cientifica',\n" +
+      "      category: 'libreria',\n" +
+      "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+      '      price: 500,\n' +
+      '      quantity: 2\n' +
+      '    }\n' +
+      '  ],\n' +
+      '  orderNumber: 1,\n' +
+      "  timestamp: '5/1/2023, 15:31:41',\n" +
+      "  state: 'generada',\n" +
+      "  email: 'sofi@gmail.com',\n" +
+      '  __v: 0\n' +
+      '}1" (type string) at path "orderNumber"
+        at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:378:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      stringValue: `"{\\n' +\n` +
+        `  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\\n' +\n` +
+        "  '  items: [\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b4463ffed450c9ffcd2f4f',\\n" +\n` +
+        `  "      description: 'Mouse',\\n" +\n` +
+        `  "      category: 'informatica',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\\n" +\n` +
+        "  '      price: 1000,\\n' +\n" +
+        "  '      quantity: 1\\n' +\n" +
+        "  '    },\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b466de5bd9c2611a4f1242',\\n" +\n` +
+        `  "      description: 'Calculadora Cientifica',\\n" +\n` +
+        `  "      category: 'libreria',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\\n" +\n` +
+        "  '      price: 500,\\n' +\n" +
+        "  '      quantity: 2\\n' +\n" +
+        "  '    }\\n' +\n" +
+        "  '  ],\\n' +\n" +
+        "  '  orderNumber: 1,\\n' +\n" +
+        `  "  timestamp: '5/1/2023, 15:31:41',\\n" +\n` +
+        `  "  state: 'generada',\\n" +\n` +
+        `  "  email: 'sofi@gmail.com',\\n" +\n` +
+        "  '  __v: 0\\n' +\n" +
+        `  '}1"`,
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '{\n' +
+        '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+        '  items: [\n' +
+        '    {\n' +
+        "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+        "      description: 'Mouse',\n" +
+        "      category: 'informatica',\n" +
+        "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+        '      price: 1000,\n' +
+        '      quantity: 1\n' +
+        '    },\n' +
+        '    {\n' +
+        "      _id: '63b466de5bd9c2611a4f1242',\n" +
+        "      description: 'Calculadora Cientifica',\n" +
+        "      category: 'libreria',\n" +
+        "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+        '      price: 500,\n' +
+        '      quantity: 2\n' +
+        '    }\n' +
+        '  ],\n' +
+        '  orderNumber: 1,\n' +
+        "  timestamp: '5/1/2023, 15:31:41',\n" +
+        "  state: 'generada',\n" +
+        "  email: 'sofi@gmail.com',\n" +
+        '  __v: 0\n' +
+        '}1',
+      path: 'orderNumber',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:376:12)
+          at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+          at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+          at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+          at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+          at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+          at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T00:18:44.869] [ERROR] prod - Error: Orders validation failed: orderNumber: Cast to Number failed for value "{\n' +
+  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+  '  items: [\n' +
+  '    {\n' +
+  "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+  "      description: 'Mouse',\n" +
+  "      category: 'informatica',\n" +
+  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+  '      price: 1000,\n' +
+  '      quantity: 1\n' +
+  '    },\n' +
+  '    {\n' +
+  "      _id: '63b466de5bd9c2611a4f1242',\n" +
+  "      description: 'Calculadora Cientifica',\n" +
+  "      category: 'libreria',\n" +
+  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+  '      price: 500,\n' +
+  '      quantity: 2\n' +
+  '    }\n' +
+  '  ],\n' +
+  '  orderNumber: 1,\n' +
+  "  timestamp: '5/1/2023, 15:31:41',\n" +
+  "  state: 'generada',\n" +
+  "  email: 'sofi@gmail.com',\n" +
+  '  __v: 0\n' +
+  '}1" (type string) at path "orderNumber"
+    at ValidationError.inspect (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    orderNumber: CastError: Cast to Number failed for value "{\n' +
+      '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+      '  items: [\n' +
+      '    {\n' +
+      "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+      "      description: 'Mouse',\n" +
+      "      category: 'informatica',\n" +
+      "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+      '      price: 1000,\n' +
+      '      quantity: 1\n' +
+      '    },\n' +
+      '    {\n' +
+      "      _id: '63b466de5bd9c2611a4f1242',\n" +
+      "      description: 'Calculadora Cientifica',\n" +
+      "      category: 'libreria',\n" +
+      "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+      '      price: 500,\n' +
+      '      quantity: 2\n' +
+      '    }\n' +
+      '  ],\n' +
+      '  orderNumber: 1,\n' +
+      "  timestamp: '5/1/2023, 15:31:41',\n" +
+      "  state: 'generada',\n" +
+      "  email: 'sofi@gmail.com',\n" +
+      '  __v: 0\n' +
+      '}1" (type string) at path "orderNumber"
+        at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:378:11)
+        at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+        at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+        at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+        at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+        at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+        at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      stringValue: `"{\\n' +\n` +
+        `  '  _id: new ObjectId("63b7178d1831a76415e5d453"),\\n' +\n` +
+        "  '  items: [\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b4463ffed450c9ffcd2f4f',\\n" +\n` +
+        `  "      description: 'Mouse',\\n" +\n` +
+        `  "      category: 'informatica',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\\n" +\n` +
+        "  '      price: 1000,\\n' +\n" +
+        "  '      quantity: 1\\n' +\n" +
+        "  '    },\\n' +\n" +
+        "  '    {\\n' +\n" +
+        `  "      _id: '63b466de5bd9c2611a4f1242',\\n" +\n` +
+        `  "      description: 'Calculadora Cientifica',\\n" +\n` +
+        `  "      category: 'libreria',\\n" +\n` +
+        `  "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\\n" +\n` +
+        "  '      price: 500,\\n' +\n" +
+        "  '      quantity: 2\\n' +\n" +
+        "  '    }\\n' +\n" +
+        "  '  ],\\n' +\n" +
+        "  '  orderNumber: 1,\\n' +\n" +
+        `  "  timestamp: '5/1/2023, 15:31:41',\\n" +\n` +
+        `  "  state: 'generada',\\n" +\n` +
+        `  "  email: 'sofi@gmail.com',\\n" +\n` +
+        "  '  __v: 0\\n' +\n" +
+        `  '}1"`,
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '{\n' +
+        '  _id: new ObjectId("63b7178d1831a76415e5d453"),\n' +
+        '  items: [\n' +
+        '    {\n' +
+        "      _id: '63b4463ffed450c9ffcd2f4f',\n" +
+        "      description: 'Mouse',\n" +
+        "      category: 'informatica',\n" +
+        "      thumbnail: 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_mouse_48px-1024.png',\n" +
+        '      price: 1000,\n' +
+        '      quantity: 1\n' +
+        '    },\n' +
+        '    {\n' +
+        "      _id: '63b466de5bd9c2611a4f1242',\n" +
+        "      description: 'Calculadora Cientifica',\n" +
+        "      category: 'libreria',\n" +
+        "      thumbnail: 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/calculator-1024.png',\n" +
+        '      price: 500,\n' +
+        '      quantity: 2\n' +
+        '    }\n' +
+        '  ],\n' +
+        '  orderNumber: 1,\n' +
+        "  timestamp: '5/1/2023, 15:31:41',\n" +
+        "  state: 'generada',\n" +
+        "  email: 'sofi@gmail.com',\n" +
+        '  __v: 0\n' +
+        '}1',
+      path: 'orderNumber',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\number.js:376:12)
+          at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1367:22)
+          at model.$set (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:1092:16)
+          at model.Document (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\document.js:166:12)
+          at model.Model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:119:12)
+          at new model (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:4999:15)
+          at OrdersDaoMongoDb.save (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\containers\containerMongoDb.js:14:27)
+          at OrdersDaoMongoDb.sendOrder (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\orders\OrdersDaoMongoDb.js:39:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Orders validation failed'
+}
+[2023-01-06T15:57:21.736] [ERROR] prod - TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\messages\MessagesDaoMongoDb.js:15:84
+    at Array.filter (<anonymous>)
+    at MessagesDaoMongoDb.getAllByEmail (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\daos\messages\MessagesDaoMongoDb.js:15:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\src\routes\login.routes.js:23:20
+[2023-01-07T23:49:21.605] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-08T23:05:09.395] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-08T23:05:09.439] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-09T01:20:27.176] [ERROR] prod - CastError: Cast to ObjectId failed for value "63b445e8fed450c9ffcd2f4" (type string) at path "_id" for model "Products"
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"63b445e8fed450c9ffcd2f4"',
+  kind: 'ObjectId',
+  value: '63b445e8fed450c9ffcd2f4',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2023-01-09T12:09:19.332] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-09T12:15:59.650] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-09T12:16:31.527] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-09T14:51:43.742] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-09T14:51:43.778] [ERROR] prod - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\model.js:5192:32)
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4901:21
+    at C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4900:10)
+    at Query.then (C:\Users\CMT\Desktop\Workspace\backend\proyecto_final\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-viuh7bv-shard-00-00.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-01.vg0dm1l.mongodb.net:27017' => [ServerDescription],
+      'ac-viuh7bv-shard-00-02.vg0dm1l.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-q0bbgz-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 1,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-01-10T00:25:50.542] [ERROR] prod - Error al loguearse
+[2023-01-10T00:26:30.052] [ERROR] prod - Error al loguearse
+[2023-01-10T00:26:36.660] [ERROR] prod - Error al loguearse
+[2023-01-10T00:27:04.030] [ERROR] prod - Error al loguearse
+[2023-01-10T00:27:15.367] [ERROR] prod - Error al loguearse
+[2023-01-10T00:27:53.964] [ERROR] prod - Error al loguearse
+[2023-01-10T00:28:07.966] [ERROR] prod - Error al loguearse
+[2023-01-10T00:32:38.933] [ERROR] prod - Error al loguearse
+[2023-01-10T00:35:13.522] [ERROR] prod - Error al loguearse
+[2023-01-10T01:35:58.269] [ERROR] prod - ReferenceError: email is not defined
+    at getAllProducts (E:\Documentos\CoderHouse\4 Backend\Proyecto\src\controllers\carts.controller.js:60:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

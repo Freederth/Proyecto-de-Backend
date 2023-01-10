@@ -20,36 +20,71 @@ El proyecto final es un e-Commerce estructurado del siguiente modo:
 - Se envia un mail a una casilla configurable, por cada registro nuevo de usuario y con cada orden de compra generada.
 - Subir a Heroku o PASS de preferencia.
 
+### Login:
+  - **POST de registro de usuario:**
+    ```localhost:8080/signup```
 
-## Rutas
-```
-ROOT
-/
-```
-La ruta raíz, si no estás logeado, te lleva directo al login. Si no tienes cuenta, puedes registrarte, sino hay un usuario de pruebas disponible al pie de página.
+  - **GET de inicio de sesión de usuario:**
+    ```localhost:8080/login```
+
+  - **GET de cierre de sesión de usuario:**
+    ```localhost:8080/logout```
+
+### Productos:
+  - **GET de todos los productos:**
+    ```localhost:8080/productos```
+
+  - **GET de producto por id:**
+    ```localhost:8080/productos/:id```
+
+  - **GET de filtrado de productos por Categoria:**
+    ```localhost:8080/productos/categoria/:categoria```
+
+  - **POST de producto:**
+    ```localhost:8080/productos/```
+
+  - **PUT de producto:**
+    ```localhost:8080/productos/:id```
+
+  - **DELETE de producto:**
+    ```localhost:8080/productos/:id```
+
+### Carritos:
+
+  - **GET de todos los productos en carrito por id:**
+    ```localhost:8080/carrito/:id/productos```
+
+  - **POST de creación de carrito vacío con id de cliente:**
+    ```localhost:8080/carrito/```
+
+  - **POST de producto con id en carrito por id del mismo:**
+    ```localhost:8080/carrito/:id/productos```
+
+  - **DELETE de carrito por id:**
+    ```localhost:8080/carrito/:id```
+
+  - **DELETE de producto con id en carrito y de producto:**
+    ```localhost:8080/carrito/:idCarrito/productos/:idProducto```
+
+### Órdenes:
+  - **GET de todas las ordenes:**
+    ```localhost:8080/ordenes/```
+
+  - **GET de orden por id:**
+    ```localhost:8080/ordenes/:id```
+
+  - **POST de creación de orden:**
+    ```localhost:8080/ordenes/```
+
+  - **PUT de orden:**
+    ```localhost:8080/ordenes/:id```
+
+  - **DELETE de orden por id:**
+    ```localhost:8080/ordenes/:id```
 
 ```
-PRODUCTOS
-
-/productos
-/productos/:id
-/productos/category/:category
-```
-
-```
-CARRITO
-
-/carrito
-
-```
-/chat
-```
-
-
-## Acceso sin registrarse
-```
-username: asdf@asdf.cl
-password: 1234
+ INFO:
+ El archivo .REST tiene configuradas rutas de prueba para los endpoint.
 ```
 
 ## [Railway link](https://proyecto-de-backend-production.up.railway.app/)
